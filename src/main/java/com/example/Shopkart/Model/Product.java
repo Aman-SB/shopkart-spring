@@ -4,6 +4,7 @@ import com.example.Shopkart.Enums.ProductCategory;
 import com.example.Shopkart.Enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Table(name = "product")
 public class Product {
 
@@ -23,7 +25,7 @@ public class Product {
 
     String productName;
 
-    double price;
+    int price;
 
     int availableQuantity;
 
